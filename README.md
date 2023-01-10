@@ -1,5 +1,5 @@
 # Security App
-## A a Java App developed to study how create an app with users authentication 
+## A Java App developed to study how create an app with users authentication 
 
 Language: Java
 
