@@ -12,17 +12,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class AuthenticationController {
 
+    private final AuthenticationService service;
+
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register (
             @RequestBody RegisterRequest request
     ) {
-        //
+        Return ResponseEntity.ok(service.register(request));
     }
 
     @PostMapping("/authenticate")
-    public ResponseEntity<AuthenticationResponse> register (
+    public ResponseEntity<AuthenticationResponse> authenticate (
             @RequestBody AuthenticationRequest request
     ) {
-        //
+        Return ResponseEntity.ok(service.authenticate(request));
     }
 }
